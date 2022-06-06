@@ -1,0 +1,182 @@
+package POOURU;
+
+public class Camionetaa {
+
+
+
+private int ancho;
+private int largo;
+private int peso;
+private int cap_de_carga;
+private boolean t_tracccion;
+private String colors; 
+private boolean motor;
+private String color_aciento; 
+private boolean asientos;
+private boolean climatizador;
+private boolean traccion;
+private boolean traccionAutomatica;
+private boolean MotorGasolina;
+private boolean acientoCuero;
+private boolean clim;
+private boolean trac;
+private boolean traccionAuto;
+
+
+
+public Camioneta() {
+	
+	ancho = 1800;
+	largo = 3000;
+	peso = 2500;
+	cap_de_carga = 300;
+	
+	
+}
+
+
+public String DimeDatosGenerales(){
+	
+	return "El largo de la camioneta es: "+ largo + "cm" + "El ancho de la camioneta es: " + ancho + "cm"+ "El peso de la camioneta es: " + peso + "kg" + "La capacidad de carga es de: "+ cap_de_carga + "kg";
+	
+	
+}
+
+
+public void estableceColor(String colorsCam) { 
+	
+    colors = colorsCam;
+    
+}
+
+		public String dimeColor() {
+			
+			return "El color de la camioneta es:"+ colors;
+		}
+
+
+public void ColorAc(String colorsAc) { 
+	
+	color_aciento = colorsAc ;
+    
+}
+
+		public String dimeColorAc() {
+			
+			return "El color de los acientos de la camioneta es:"+ color_aciento;
+		}
+
+
+public void configuraTipoDeTraccion( String traccionAuto ) {
+	
+	if(traccionAuto.equalsIgnoreCase("si")) {
+		
+		this.traccionAuto = true;
+	
+	}else{
+		
+		this.traccionAuto = false;
+	}
+	
+	}
+	
+	public String dimeTipoDeTraccion() 
+	{	
+		if(traccionAuto == true) {
+		return "La camioneta tiene traccion Automatica";
+		
+		}else {
+			return "La camioneta tiene traccion Sincronica";
+		}
+	}	
+	
+	
+	
+	
+	
+	public void configuraTipoDeMotor(String MotorGasolina) 
+	{
+		
+		if(MotorGasolina.equalsIgnoreCase("si")) {
+			this.MotorGasolina=true;
+		
+		}else{	
+			this.MotorGasolina=false;
+		}
+	}
+		
+		public String dimeTipoDeMotor() 
+		{	
+			if(MotorGasolina == true) {
+			return "La camioneta  tiene motor de gasolina";
+			
+			}else {
+				return "La camioneta  tiene motor electrico";
+			}
+		}	
+	
+		public void configuraAcientos(String acientoCuero) 
+		{
+			
+			if(acientoCuero.equalsIgnoreCase("si")) {
+				this.acientoCuero=true;
+			
+			}else{	
+				this.acientoCuero=false;
+			}
+		}
+			
+			public String dimeTipoDeAciento() 
+			{	
+				if(acientoCuero == true) {
+				return "La camioneta tiene acientos de cuero";
+				
+				}else {
+					return "La camioneta tiene acientos de fabrica";
+				}
+			}	
+			
+			
+			public void configuraClimatizador (String clim) 
+			{
+				
+				if(clim.equalsIgnoreCase("si")) {
+					this.clim=true;
+				
+				}else{	
+					this.clim=false;
+				}
+			}
+				
+				public String dimeClimatizador() 
+				{	
+					if(clim == true) {
+					return "La camioneta tiene climatizador";
+					
+					}else {
+						return "La camioneta no tiene climatizador";
+					}
+				}
+				
+				
+				public void configuraTraccion (String trac) 
+				{
+					
+					if(trac.equalsIgnoreCase("si")) {
+						this.trac = true;
+					
+					}else{	
+						this.trac=false;
+					}
+				}
+					
+					public String dimeTraccion() 
+					{	
+						if(trac == true) {
+						return "La camioneta tiene traccion 4x4";
+						
+						}else {
+							return "La camioneta tiene traccion 2x2";
+						}
+					}	
+}

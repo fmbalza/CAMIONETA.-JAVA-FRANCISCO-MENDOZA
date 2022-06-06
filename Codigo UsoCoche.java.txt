@@ -1,0 +1,49 @@
+package POOURU;
+
+
+import javax.swing.JOptionPane;
+
+public class Usocoche {
+
+	
+
+	public static void main(String[] args) {
+
+		Camionetaa LandCruiser = new Camionetaa();
+		
+		System.out.println(LandCruiser.DimeDatosGenerales());
+		
+		
+		LandCruiser.estableceColor (JOptionPane.showInputDialog("Introduce Color"));
+		
+		 System.out.println(LandCruiser.dimeColor());
+		 
+		 
+		 LandCruiser.ColorAc (JOptionPane.showInputDialog("Introduce Color de Acientos"));
+			
+		 System.out.println(LandCruiser.dimeColorAc());
+		 
+		 
+		 LandCruiser.configuraTipoDeTraccion (JOptionPane.showInputDialog("Tiene traccion automatica:"));
+			
+		 System.out.println(LandCruiser.dimeTipoDeTraccion());		 
+		 
+		 LandCruiser.configuraTipoDeMotor (JOptionPane.showInputDialog("Tiene Motor a Gasolina:"));
+			
+		 System.out.println(LandCruiser.dimeTipoDeMotor());
+		 
+		 LandCruiser.configuraAcientos (JOptionPane.showInputDialog("Tiene Acientos de cuero:"));
+			
+		 System.out.println(LandCruiser.dimeTipoDeAciento());
+		 
+		 
+		 LandCruiser.configuraClimatizador (JOptionPane.showInputDialog("Tiene Climatizador:"));
+			
+		 System.out.println(LandCruiser.dimeClimatizador());	
+		 
+		 LandCruiser.configuraTraccion (JOptionPane.showInputDialog("Tiene Traccion 4x4:"));
+			
+		 System.out.println(LandCruiser.dimeTraccion());		 
+	}
+
+}
